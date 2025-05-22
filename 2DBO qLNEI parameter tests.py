@@ -162,8 +162,8 @@ seeds = [0, 1, 2, 3, 4]
 '''
 batch_sizes = [5, 10]
 initial_samples = [4, 24]
-noise_level = [0, 10, 20]
-seed = [0,42]
+noise_levels = [0, 10, 20]
+seeds = [0,42]
 results = []
 
 for batch_size in batch_sizes:
@@ -222,7 +222,7 @@ for batch_size in batch_sizes:
                     'batch_size': batch_size,
                     'initial_sample': initial_sample,
                     'noise_level': noise_level,
-                    'beta': beta,
+                    #'beta': beta,
                     'seed': seed,
                     'converged_95': converged_95,
                     'converged_99': converged_99,
