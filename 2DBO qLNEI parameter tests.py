@@ -200,7 +200,7 @@ for batch_size in batch_sizes:
                         bounds=bounds,
                         q=batch_size,
                         num_restarts=5,
-                        raw_samples=20
+                        raw_samples=32
                     )
 
                     new_y = objective_function(candidate, noise_level= noise_level)
