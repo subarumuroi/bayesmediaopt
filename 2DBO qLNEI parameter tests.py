@@ -1,3 +1,4 @@
+
 import pandas as pd
 import numpy as np
 import torch
@@ -17,7 +18,7 @@ from gpytorch.constraints import Interval
 from gpytorch.priors import SmoothedBoxPrior
 
 true_optimum = torch.tensor([7.0, 33.5]) # answers determined by querying objective function
-max_samples = 200 #This is initial sample + (batch size x number of iterations)
+max_samples = 64 #This is initial sample + (batch size x number of iterations)
 
 
 nu = 2.5
@@ -234,3 +235,5 @@ for batch_size in batch_sizes:
 
 df = pd.DataFrame(results)
 print(df)
+
+df.to_csv("results.csv", index=False)
