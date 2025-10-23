@@ -1,3 +1,5 @@
+# this is the python version of the equvialent notebook for parameter testing ucb
+
 import pandas as pd
 import numpy as np
 import torch
